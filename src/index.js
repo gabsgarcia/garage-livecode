@@ -54,7 +54,7 @@ const createCar = (event) => {
   fetch(garageUrl, {
     method: "POST",  // Tell the API we want to add new information
     headers: { "Content-Type": "application/json" }, // Tell the API we're sending JSON data
-    body: JSON.stringify(myNewCar)  // Convert our car information into JSON format
+    body: JSON.stringify(myNewCar)  // Convert our JSON car information into string format
   })
   .then(() => fetchAllCars()) // After the car is added, update our display to show all cars including the new one
 }
